@@ -11,8 +11,12 @@ const App = () => {
   return (
     <div>
      <button style={{padding: '10px', margin: '10px', backgroundColor:"red", borderRadius: '5px'}} className="model-open" onClick={handleModel} >Show Model</button>
+
+     <Model show={displayModel} onClose={() => setDisplayModel(false)}>
+      This is the content of the model.
+     </Model>
     </div>
-  )
+  );
 }
 
 export default App
